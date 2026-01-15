@@ -2,11 +2,38 @@ import Cards from "../../components/cards";
 import Inputs from "../../components/inputs";
 import Navigation from "../../components/navigation";
 import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import slide1 from "../../assets/slide1.webp";
+import slide2 from "../../assets/slide2.webp";
+import slide3 from "../../assets/slide3.webp";
+import slide4 from "../../assets/slide4.webp";
+import slide5 from "../../assets/slide5.webp";
+import slide6 from "../../assets/slide6.webp";
+import slide7 from "../../assets/slide7.webp";
 
 export default function HomePage() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
+
   return (
     <div>
       <Navigation />
+
       {/* Hero Section */}
       <section className="hero-section flex justify-center py-56 xl:py-64 px-4 md:px-6 lg:px-8 items-center">
         <div className="max-w-7xl text-center">
@@ -28,6 +55,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* Showcase Section */}
       <div className="m-12 grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center ">
         <Cards
@@ -55,6 +83,7 @@ export default function HomePage() {
           classId="showcase3"
         />
       </div>
+
       {/* Find Listing Section */}
       <div className="find-listing-section flex justify-center py-56 xl:py-64 px-4 md:px-6 lg:px-8 items-center">
         <div className="bg-white rounded-lg p-8 shadow-lg w-full">
@@ -107,6 +136,89 @@ export default function HomePage() {
               Search Listings
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Photo Gallery Section */}
+      <div className="py-16 px-4 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-12">
+            PHOTO GALLERY
+          </h2>
+
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={true}
+            responsive={responsive}
+            ssr={true}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+            keyBoardControl={true}
+            customTransition="transform 300ms ease-in-out"
+            transitionDuration={300}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px px-2"
+          >
+            <div>
+              <img
+                src={slide1}
+                alt="Slide 1"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide2}
+                alt="Slide 2"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide3}
+                alt="Slide 3"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide4}
+                alt="Slide 4"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide5}
+                alt="Slide 5"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide6}
+                alt="Slide 6"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <div>
+              <img
+                src={slide7}
+                alt="Slide 7"
+                className="w-full h-full lg:h-96 object-cover rounded-lg"
+              />
+            </div>
+          </Carousel>
         </div>
       </div>
     </div>
