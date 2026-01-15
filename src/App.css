@@ -8,23 +8,25 @@
   background-blend-mode: multiply;
 }
 
-.categSect1 {
+.showcase1 {
   background: linear-gradient(to top, #497d74, #efe9d5),
     url("assets/showcase1.webp");
   background-size: cover;
   background-blend-mode: multiply;
 }
 
-.categSect2 {
+.showcase2 {
   background: linear-gradient(to top, #497d74, #efe9d5),
     url("assets/showcase2.webp");
   background-size: cover;
   background-blend-mode: multiply;
 }
 
-.categSect3 {
+.showcase3 {
   background: linear-gradient(to top, #497d74, #efe9d5),
     url("assets/showcase3.webp");
-  background-size: contain;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
   background-blend-mode: multiply;
 }
