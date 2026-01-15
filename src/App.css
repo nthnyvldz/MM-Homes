@@ -28,6 +28,13 @@
   background-position: center;
 }
 
+.find-listing-section {
+  background: url("assets/formBG.webp");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
 @media (min-width: 768px) {
   .showcase3 {
     background-size: cover;
