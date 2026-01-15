@@ -8,23 +8,28 @@
   background-blend-mode: multiply;
 }
 
-.categSect1 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+.showcase1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase1.webp");
   background-size: cover;
-  background-blend-mode: multiply;
 }
 
-.categSect2 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+.showcase2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase2.webp");
   background-size: cover;
-  background-blend-mode: multiply;
 }
 
-.categSect3 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+.showcase3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase3.webp");
-  background-size: contain;
-  background-blend-mode: multiply;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .showcase3 {
+    background-size: cover;
+  }
 }

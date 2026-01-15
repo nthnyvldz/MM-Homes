@@ -1,3 +1,4 @@
+import Cards from "../../components/cards";
 import Navigation from "../../components/navigation";
 
 export default function HomePage() {
@@ -29,51 +30,30 @@ export default function HomePage() {
 
       {/* Showcase Section */}
       <div className="m-12 grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center ">
-        <div className="categSect1 group relative flex justify-center h-40 md:h-80 w-full items-center overflow-hidden rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300">
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 group-hover:opacity-0 transition-opacity duration-300">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">
-              Top Residential Sales Last 5 Years
-            </h5>
-          </div>
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-xs md:text-sm lg:text-base font-medium mb-2">
-              We helped nearly 90 clients in 2021, and closed 28.5 million in
+        <Cards
+          title="Top Residential Sales Last 5 Years"
+          description="We helped nearly 90 clients in 2021, and closed 28.5 million in
               sales! Our team works hard everyday to grow and learn, so that we
               may continue to excel in our market. Our clients deserve our best,
-              & we want to make sure our best is better every year.
-            </p>
-          </div>
-        </div>
+              & we want to make sure our best is better every year."
+          classId="showcase1"
+        />
 
-        <div className="categSect2 group relative flex justify-center h-40 md:h-80 w-full items-center overflow-hidden rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300">
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 group-hover:opacity-0 transition-opacity duration-300">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">
-              Don't Just List it...
-            </h5>
-          </div>
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-xs md:text-sm lg:text-base font-medium mb-2">
-              Get it SOLD! We exhaust every avenue to ensure our listings are at
+        <Cards
+          title="Don't Just List it..."
+          description="Get it SOLD! We exhaust every avenue to ensure our listings are at
               the fingertips of every possible buyer, getting you top dollar for
-              your home.
-            </p>
-          </div>
-        </div>
+              your home."
+          classId="showcase2"
+        />
 
-        <div className="categSect3 group relative flex justify-center h-40 md:h-80 w-full items-center overflow-hidden rounded-lg bg-white border border-gray-200 hover:shadow-lg transition-all duration-300">
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 group-hover:opacity-0 transition-opacity duration-300">
-            <h5 className="text-sm md:text-lg lg:text-xl font-bold">
-              Guide to Buyers
-            </h5>
-          </div>
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-xs md:text-sm lg:text-base font-medium mb-2">
-              Nobody knows the market like we do. Enjoy having a pro at your
+        <Cards
+          title="Guide to Buyers"
+          description="Nobody knows the market like we do. Enjoy having a pro at your
               service. Market analysis, upgrades lists, contractors on speed
-              dial, & more!
-            </p>
-          </div>
-        </div>
+              dial, & more!"
+          classId="showcase3"
+        />
       </div>
     </div>
   );
