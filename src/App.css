@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.hero-section {
+  background: linear-gradient(to bottom, #efe9d5, #215e61),
+    url("assets/hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.categSect1 {
+  background: linear-gradient(to top, #497d74, #efe9d5),
+    url("assets/showcase1.webp");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.categSect2 {
+  background: linear-gradient(to top, #497d74, #efe9d5),
+    url("assets/showcase2.webp");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.categSect3 {
+  background: linear-gradient(to top, #497d74, #efe9d5),
+    url("assets/showcase3.webp");
+  background-size: contain;
+  background-blend-mode: multiply;
+}
