@@ -9,24 +9,27 @@
 }
 
 .showcase1 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase1.webp");
   background-size: cover;
-  background-blend-mode: multiply;
 }
 
 .showcase2 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase2.webp");
   background-size: cover;
-  background-blend-mode: multiply;
 }
 
 .showcase3 {
-  background: linear-gradient(to top, #497d74, #efe9d5),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("assets/showcase3.webp");
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: center;
-  background-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+  .showcase3 {
+    background-size: cover;
+  }
 }
