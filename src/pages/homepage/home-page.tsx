@@ -1,11 +1,12 @@
 import Cards from "../../components/cards";
+import Inputs from "../../components/inputs";
 import Navigation from "../../components/navigation";
+import "react-multi-carousel/lib/styles.css";
 
 export default function HomePage() {
   return (
     <div>
       <Navigation />
-
       {/* Hero Section */}
       <section className="hero-section flex justify-center py-56 xl:py-64 px-4 md:px-6 lg:px-8 items-center">
         <div className="max-w-7xl text-center">
@@ -27,7 +28,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Showcase Section */}
       <div className="m-12 grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center ">
         <Cards
@@ -54,6 +54,60 @@ export default function HomePage() {
               dial, & more!"
           classId="showcase3"
         />
+      </div>
+      {/* Find Listing Section */}
+      <div className="find-listing-section flex justify-center py-56 xl:py-64 px-4 md:px-6 lg:px-8 items-center">
+        <div className="bg-white rounded-lg p-8 shadow-lg w-full">
+          <h2 className="text-md lg:text-xl font-bold text-gray-800 text-center">
+            SEARCH LISTINGS
+          </h2>
+
+          <div className="grid gap-3 lg:grid-cols-3 lg:gap-5 mt-8">
+            <Inputs
+              inputType="selection"
+              placeholder="Select Location"
+              label="Location"
+              options={["Location 1", "Location 2", "Location 3"]}
+            />
+
+            <Inputs
+              inputType="selection"
+              placeholder="Type"
+              label="Type"
+              options={["Type 1", "Type 2", "Type 3"]}
+            />
+
+            <Inputs
+              inputType="selection"
+              placeholder="Sort By"
+              label="Sort By"
+              options={["Option 1", "Option 2", "Option 3"]}
+            />
+
+            <Inputs
+              inputType="selection"
+              placeholder="Any Number"
+              label="Bedrooms"
+              options={["1+", "2+", "3+", "4+", "5+"]}
+            />
+
+            <Inputs
+              inputType="selection"
+              placeholder="Any Number"
+              label="Baths"
+              options={["1+", "2+", "3+", "4+", "5+"]}
+            />
+
+            <div className="grid grid-cols-2 gap-2">
+              <Inputs inputType="number" label="Min Price" />
+              <Inputs inputType="number" label="Max Price" />
+            </div>
+
+            <button className="col-span-full px-6 py-3 rounded-md bg-black hover:bg-gray-800 text-[12px] lg:text-sm font-medium text-white transition-colors">
+              Search Listings
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
