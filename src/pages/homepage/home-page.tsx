@@ -363,6 +363,23 @@ export default function HomePage() {
                   Appointments outside office hours available upon request. Just
                   call!
                 </p>
+
+                <div className="p-2 bg-gray-300 rounded-lg">
+                  <div className="max-w-7xl mx-auto">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <iframe
+                        src="https://maps.google.com/maps?q=3190%20NV-160%20Suite%20F,%20Pahrump,%20NV%2089048,%20USA&output=embed"
+                        width="100%"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen={true}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Office Location - 3190 NV-160 Suite F, Pahrump, NV 89048, USA"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
