@@ -1,5 +1,12 @@
 interface InputsProps {
-  inputType: "text" | "email" | "tel" | "password" | "number" | "selection";
+  inputType:
+    | "text"
+    | "email"
+    | "tel"
+    | "password"
+    | "number"
+    | "selection"
+    | "textarea";
   placeholder?: string;
   label: string;
   options?: string[];
@@ -33,11 +40,18 @@ export default function Inputs({
             </option>
           ))}
         </select>
+      ) : inputType === "textarea" ? (
+        <textarea
+          id="first_name"
+          className="bg-neutral-secondary-medium border-b border-gray-400 text-heading text-sm rounded-lg focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+          placeholder={placeholder}
+          rows={4}
+        />
       ) : (
         <input
           type={inputType}
           id="first_name"
-          className="bg-neutral-secondary-medium border border-gray-400 text-heading text-sm rounded-lg focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+          className="bg-neutral-secondary-medium border-b border-gray-400 text-heading text-sm rounded-lg focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
           placeholder={placeholder}
         />
       )}

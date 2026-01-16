@@ -18,6 +18,10 @@ import support1 from "../../assets/support1.webp";
 import support2 from "../../assets/support2.webp";
 import support3 from "../../assets/support3.webp";
 import support4 from "../../assets/support4.webp";
+import { CiFacebook } from "react-icons/ci";
+import { IoLogoInstagram } from "react-icons/io";
+import { CiLinkedin } from "react-icons/ci";
+import { FaYelp } from "react-icons/fa";
 
 export default function HomePage() {
   const responsive = {
@@ -147,6 +151,68 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Services Section */}
+      <div className="py-8 px-4 md:px-6 lg:px-8">
+        <h2 className="text-md lg:text-3xl font-bold text-gray-800 text-center mb-12">
+          OUR SERVICES
+        </h2>
+        <div className="max-w-sm md:max-w-4xl lg:max-w-7xl mx-auto">
+          <DynamicCards
+            image={service1}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+
+          <DynamicCards
+            image={service2}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+
+          <DynamicCards
+            image={service3}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+        </div>
+      </div>
+
+      {/* Support Section */}
+      <div className="py-8 px-4 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="flex justify-center">
+              <img
+                src={support1}
+                alt="Support 1"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support2}
+                alt="Support 2"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support3}
+                alt="Support 3"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support4}
+                alt="Support 4"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Photo Gallery Section */}
       <div className="py-16 px-4 md:px-6 lg:px-8 bg-black">
         <div className="max-w-7xl mx-auto">
@@ -230,67 +296,126 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Services Section */}
-      <div className="py-8 px-4 md:px-6 lg:px-8">
-        <h2 className="text-md lg:text-3xl font-bold text-gray-800 text-center mb-12">
-          OUR SERVICES
-        </h2>
-        <div className="max-w-sm md:max-w-4xl lg:max-w-7xl mx-auto">
-          <DynamicCards
-            image={service1}
-            title="Real Estate Done Right"
-            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
-          />
-
-          <DynamicCards
-            image={service2}
-            title="Real Estate Done Right"
-            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
-          />
-
-          <DynamicCards
-            image={service3}
-            title="Real Estate Done Right"
-            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
-          />
-        </div>
-      </div>
-
-      {/* Support Section */}
-      <div className="py-8 px-4 md:px-6 lg:px-8">
+      {/* Contact Section */}
+      <div className="py-16 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="flex justify-center">
-              <img
-                src={support1}
-                alt="Support 1"
-                className="w-auto h-24 object-cover rounded-lg"
-              />
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-12">
+            CALL OR VISIT
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">
+                Send a Message
+              </h3>
+
+              <div className="space-y-4">
+                <Inputs inputType="text" placeholder="Your Name" label="Name" />
+
+                <Inputs
+                  inputType="email"
+                  placeholder="Your Email"
+                  label="Email"
+                />
+
+                <Inputs
+                  inputType="textarea"
+                  placeholder="Your Message"
+                  label="Message"
+                />
+
+                <button className="w-full px-6 py-3 rounded-md bg-black hover:bg-gray-800 text-sm font-medium text-white transition-colors">
+                  Send
+                </button>
+              </div>
             </div>
-            <div className="flex justify-center">
-              <img
-                src={support2}
-                alt="Support 2"
-                className="w-auto h-24 object-cover rounded-lg"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img
-                src={support3}
-                alt="Support 3"
-                className="w-auto h-24 object-cover rounded-lg"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img
-                src={support4}
-                alt="Support 4"
-                className="w-auto h-24 object-cover rounded-lg"
-              />
+
+            <div className="space-y-8">
+              <div className="space-y-8">
+                <div className="space-y-2 lg:space-y-6">
+                  <h3 className="text-base lg:text-xl font-bold text-gray-800">
+                    Marci Metzger - THE RIDGE REALTY GROUP
+                  </h3>
+                  <p className="text-xs lg:text-base text-gray-600">
+                    3190 HW-160, Suite F, Pahrump, Nevada 89048, United States
+                  </p>
+
+                  <a
+                    href="tel:(206) 919-6886"
+                    className="text-xs lg:text-sm font-light text-shadow-gray-400 transition-colors"
+                  >
+                    (206) 919-6886
+                  </a>
+                </div>
+
+                <div>
+                  <h4 className="text-base lg:text-xl font-bold text-gray-800 mb-2">
+                    Office Hours
+                  </h4>
+                  <p className="text-gray-600 text-xs lg:text-base">
+                    Open daily
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00
+                    am - 7:00 pm
+                  </p>
+                </div>
+
+                <p className="text-xs lg:text-xs italic text-gray-700">
+                  Appointments outside office hours available upon request. Just
+                  call!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-black py-8 px-4 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="flex justify-center space-x-6 mb-6">
+            <a
+              href="https://www.facebook.com/MarciHomes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+              aria-label="Facebook"
+            >
+              <CiFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/marciandlauren_nvrealtors/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-400 transition-colors text-2xl"
+              aria-label="Instagram"
+            >
+              <IoLogoInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marci-metzger-30642496/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-300 transition-colors text-2xl"
+              aria-label="LinkedIn"
+            >
+              <CiLinkedin />
+            </a>
+            <a
+              href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-red-400 transition-colors text-2xl"
+              aria-label="Yelp"
+            >
+              <FaYelp />
+            </a>
+          </div>
+
+          <p className="text-white text-sm">
+            Copyright © 2026 Marci METZGER Homes - All Rights Reserved
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
