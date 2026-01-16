@@ -3,6 +3,7 @@ import Inputs from "../../components/inputs";
 import Navigation from "../../components/navigation";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import DynamicCards from "../../components/dynamic-cards";
 import slide1 from "../../assets/slide1.webp";
 import slide2 from "../../assets/slide2.webp";
 import slide3 from "../../assets/slide3.webp";
@@ -10,6 +11,13 @@ import slide4 from "../../assets/slide4.webp";
 import slide5 from "../../assets/slide5.webp";
 import slide6 from "../../assets/slide6.webp";
 import slide7 from "../../assets/slide7.webp";
+import service1 from "../../assets/services1.webp";
+import service2 from "../../assets/services2.webp";
+import service3 from "../../assets/services3.webp";
+import support1 from "../../assets/support1.webp";
+import support2 from "../../assets/support2.webp";
+import support3 from "../../assets/support3.webp";
+import support4 from "../../assets/support4.webp";
 
 export default function HomePage() {
   const responsive = {
@@ -140,9 +148,9 @@ export default function HomePage() {
       </div>
 
       {/* Photo Gallery Section */}
-      <div className="py-16 px-4 md:px-6 lg:px-8">
+      <div className="py-16 px-4 md:px-6 lg:px-8 bg-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-12">
+          <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
             PHOTO GALLERY
           </h2>
 
@@ -219,6 +227,68 @@ export default function HomePage() {
               />
             </div>
           </Carousel>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      <div className="py-8 px-4 md:px-6 lg:px-8">
+        <h2 className="text-md lg:text-3xl font-bold text-gray-800 text-center mb-12">
+          OUR SERVICES
+        </h2>
+        <div className="max-w-sm md:max-w-4xl lg:max-w-7xl mx-auto">
+          <DynamicCards
+            image={service1}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+
+          <DynamicCards
+            image={service2}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+
+          <DynamicCards
+            image={service3}
+            title="Real Estate Done Right"
+            description="Nervous about your property adventure? Don't be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!"
+          />
+        </div>
+      </div>
+
+      {/* Support Section */}
+      <div className="py-8 px-4 md:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="flex justify-center">
+              <img
+                src={support1}
+                alt="Support 1"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support2}
+                alt="Support 2"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support3}
+                alt="Support 3"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={support4}
+                alt="Support 4"
+                className="w-auto h-24 object-cover rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
