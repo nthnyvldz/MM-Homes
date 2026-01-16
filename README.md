@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# MM-Homes - Marci Metzger Real Estate Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive real estate website built for Marci Metzger - THE RIDGE REALTY GROUP, showcasing real estate services in Pahrump, Nevada.
 
-Currently, two official plugins are available:
+## 📋 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was completed as part of a **Web Builder Assignment** to demonstrate web development skills, creativity, and attention to detail. The assignment involved revamping an existing real estate webpage with improved design, user experience, and modern web development practices.
 
-## React Compiler
+### Assignment Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Revamp the "Home" page with improved design (not copy-paste)
+- Use all original content including images
+- Create a single-page website
+- Showcase creativity and technical skills
+- Complete within 1 day
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 18** - Modern JavaScript library for building user interfaces
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **React Icons** - Popular icon library for social media and UI icons
+- **React Multi Carousel** - Interactive carousel component for image galleries
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📱 Responsive Design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Mobile-first approach with responsive breakpoints
+- Optimized for desktop, tablet, and mobile devices
+- Clean, modern UI with professional aesthetics
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🏡 Real Estate Sections
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Hero Section** - Eye-catching banner with call-to-action
+- **Showcase Cards** - Highlighting key services and achievements
+- **Property Search** - Interactive search form with filters
+- **Photo Gallery** - Carousel displaying property images
+- **Services Overview** - Dynamic cards showcasing real estate services
+- **Contact Form** - Lead capture with message functionality
+- **Google Maps Integration** - Office location with interactive map
+- **Social Media Links** - Professional social media presence
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🎨 Design Features
+
+- Modern color scheme and typography
+- Smooth transitions and hover effects
+- Professional imagery and visual hierarchy
+- Accessible design with proper ARIA labels
+- Clean, intuitive navigation
+
+## 📝 Assignment Completion
+
+This project successfully meets all assignment requirements:
+
+- ✅ Revamped design with modern aesthetics
+- ✅ Used all original content and images
+- ✅ Created single-page website architecture
+- ✅ Demonstrated creativity and technical skills
+- ✅ Implemented responsive, professional design
+- ✅ Enhanced user experience and functionality
+
+**Built with ❤️ for Marci Metzger Real Estate**
